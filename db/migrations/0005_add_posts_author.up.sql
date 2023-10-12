@@ -1,0 +1,3 @@
+ALTER TABLE posts ADD COLUMN IF NOT EXISTS author_id INT;
+
+ALTER TABLE posts ADD CONSTRAINT posts_users_fk FOREIGN KEY(author_id) REFERENCES users(user_id) ON DELETE CASCADE;

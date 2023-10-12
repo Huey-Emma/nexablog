@@ -1,0 +1,3 @@
+ALTER TABLE posts DROP COLUMN IF EXISTS author_id;
+
+ALTER TABLE posts DROP CONSTRAINT posts_users_fk;
